@@ -1,5 +1,6 @@
 //Below Code is to update UI with every 10 seconds
 //First declare one global varialbe for Handler to update the UI control from Thread, like below
+public Static final int waitingTime = 10000;
 
 Handler mHandler = new Handler();
 
@@ -11,7 +12,7 @@ Handler mHandler = new Handler();
             // TODO Auto-generated method stub
             while (true) {
                 try {
-                    Thread.sleep(10000); //Sleep for 10 seconds
+                    Thread.sleep(waitingTime); //Sleep for 10 seconds
                     mHandler.post(new Runnable() {
 
                         @Override
